@@ -40,28 +40,51 @@ The CPU design follows a classic von Neumann architecture with the following key
 ## Project Structure
 ELEC_374_project/
 ├── System/ # Main system implementation
+
 │ ├── System.v # Top-level system module
+
 │ ├── CPU_Design.qpf # Quartus Prime project file
+
 │ ├── DataPath_partition/ # DataPath implementation
+
 │ │ ├── DataPath.v # Main DataPath module
+
 │ │ ├── ALU_files/ # ALU components
+
 │ │ ├── Bus_files/ # Bus multiplexer logic
+
 │ │ └── Registers/ # Register implementations
+
 │ ├── Control_unit_partition/ # Control unit implementation
+
 │ │ ├── Control.v # Main control unit FSM
+
 │ │ └── Control copy 2.v # Backup control unit
+
 │ ├── Memory/ # Memory system
+
 │ │ ├── RAM512x32.v # 512x32 RAM implementation
+
 │ │ ├── instructions.txt # Instruction set documentation
+
 │ │ └── .hex, .mif # Memory initialization files
+
 │ ├── Testbench_CONTROL.v # Control unit testbench
+
 │ ├── SystemTestBench.v # System-level testbench
+
 │ └── Seven_Seg_Display_Out.v # Seven-segment display driver
+
 ├── Phase_1_SS/ # Phase 1 screenshots
+
 ├── Phase_2_SS/ # Phase 2 screenshots
+
 ├── Phase_3_SS/ # Phase 3 screenshots
+
 ├── Phase_4_SS/ # Phase 4 screenshots
+
 └── 374_Tutrorial_files/ # Reference tutorial files
+
 
 
 ## Implementation Phases
